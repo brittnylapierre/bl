@@ -29,7 +29,7 @@ services:
     volumes:
       - $PWD/lib/generators/blacklight/templates/solr/conf:/opt/solr/conf
     ports:
-      - "${SOLR_PORT}:8983"
+      - "${SOLR_PORT}:8984"
     entrypoint:
       - docker-entrypoint.sh
       - solr-precreate
