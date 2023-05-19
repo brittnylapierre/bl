@@ -1,6 +1,6 @@
 ARG ALPINE_RUBY_VERSION
 
-FROM ruby:${ALPINE_RUBY_VERSION}-alpine
+FROM ruby:3.0.3-alpine
 
 RUN apk add --update --no-cache \
   bash \
@@ -19,7 +19,7 @@ WORKDIR /app
 
 RUN gem update --system && \
   gem install bundler && \
-  bundle config build.nokogiri --use-system-libraries
+  bundle config build.nokogiri --use-system-libraries 
 
 COPY . .
 

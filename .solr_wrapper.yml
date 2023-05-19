@@ -2,4 +2,4 @@
 # port: 8984
 collection:
   dir: lib/generators/blacklight/templates/solr/conf
-  name: blacklight-core
+  name: gettingstarted
